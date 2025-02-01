@@ -8,7 +8,7 @@ function App() {
 
   const payHandler = (event) => {
     event.preventDefault();
-    Axios.post("http://localhost:5000/token", {
+    Axios.post("http://localhost:8000/token", {
       amount,
       phone,
     })
@@ -16,19 +16,19 @@ function App() {
         console.log(res);
       })
       .catch((error) => {
-       console.log(error);
+        console.log(error);
       });
   };
   return (
     <div className="  mt-10 justify-center items-center  flex flex-col">
-      <h1 className="text-2xl">
+      <h1 className="text-2xl mb-10">
         Pay with <span className="text-green-600  font-bold">Mpesa</span>{" "}
       </h1>
       <form className="flex flex-col space-y-5">
         <input
           placeholder="phone"
           onChange={(e) => setPhone(e.target.value)}
-          className=" bg-slate-100 text-center rounded-xl"
+          className="bg-slate-100 text-center rounded-xl"
         />
         <input
           placeholder="Amount"

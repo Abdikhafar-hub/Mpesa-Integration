@@ -1,8 +1,8 @@
 const axios = require("axios");
 
 const createToken = async (req, res, next) => {
-  const secret = "dRFgIsOAUaiaN5NK";
-  const consumer = "4MKhZD24b0ibxPw12SYtorvGEwjFcZOU";
+  const secret = "Wb0AaaoItQ5n98gV";
+  const consumer = "uHmCAuphnum08OQYG0nMQ0HdfD9jS5Uh";
   const auth = new Buffer.from(`${consumer}:${secret}`).toString("base64");
   await axios
     .get(
@@ -28,7 +28,8 @@ const stkPush = async (req, res) => {
   const shortCode = 174379;
   const phone = req.body.phone.substring(1);
   const amount = req.body.amount;
-  const passkey ="bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
+  const passkey =
+    "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
   const url = "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest";
 
   const date = new Date();
