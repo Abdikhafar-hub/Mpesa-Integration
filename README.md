@@ -1,2 +1,2 @@
-﻿# mpesa-intergrat
+﻿# mpesa-intergra
 Repository made during a youtube video on how to archieve stk push with nodejs
