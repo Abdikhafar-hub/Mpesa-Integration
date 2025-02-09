@@ -1,2 +1,2 @@
-﻿# mpesa-interg
+﻿# mpesa-inter
 Repository made during a youtube video on how to archieve stk push with nodejs
