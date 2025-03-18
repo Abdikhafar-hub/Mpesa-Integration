@@ -1,2 +1,2 @@
-﻿# mpesa-integratio
+﻿# mpesa-integration
 
